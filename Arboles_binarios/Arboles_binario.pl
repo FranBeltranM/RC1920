@@ -67,7 +67,6 @@ hojas(a(_, HI, HD), R) :-
 % raiz, HI, HD
 
 preorden(nil, []).
-
 preorden(a(E, HI, HD), U) :-
 	preorden(HI, RI),
 	preorden(HD, RD),
@@ -76,8 +75,19 @@ preorden(a(E, HI, HD), U) :-
 % posorden
 % HI, HD, raiz
 
+posorden(nil, []).
+posorden(a(E, HI, HD), U) :-
+	posorden(HI, RI),
+	posorden(HD, RD),
+	append(RI, RD, R),
+	append(R,[E], U).
 
 % inorden
 % HI, raiz, HD
 
-
+inorden(nil, []).
+inorden(a(E, HI, HD), U) :-
+	inorden(HI, RI),
+	inorden(HD, RD),
+	append(RI, [E], R),
+	append(R, RD, U).
