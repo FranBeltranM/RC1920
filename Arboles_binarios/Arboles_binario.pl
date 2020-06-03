@@ -29,7 +29,6 @@ pertenece(E, a(Et, _, HD)) :-
 	E \= Et,
 	pertenece(E, HD).
 
-
 /*
     hojas(Arbol, Lista)
     es cierto si Lista unifica con
@@ -91,3 +90,73 @@ inorden(a(E, HI, HD), U) :-
 	inorden(HD, RD),
 	append(RI, [E], R),
 	append(R, RD, U).
+
+/*
+buscar_abb(E, abb)
+	es cierto si el elemento E pertenece al árbol binario de búsqueda ABB
+*/
+
+buscar_abb(E, a(E, _, _)).
+
+buscar_abb(E, a(Raiz, HI, _)) :-
+	E < Raiz,
+	buscar_abb(E, HI).
+	
+buscar_abb(E, a(Raiz, _, HD)) :-
+	E > Raiz,
+	buscar_abb(E, HD).
+
+/*
+
+			9
+	5			12
+3		6 	10		15
+
+*/
+
+arbol4(a(9, a(5, a(3,nil,nil), a(7,nil,nil)), a(12, a(10,nil,nil), a(15,nil,nil)))).
+
+/* crea_arbol(+Lista, +Arbol)
+    es cierto si Arbol unifica con un arbol
+    binario que contiene los elementos
+    de una lista
+*/
+
+/*
+crear_arbol([], nil).
+
+crear_arbol([Cabeza|Resto], a(Cabeza, R, nil)) :-
+	crear_arbol(Resto, R).
+
+balanceado(nil).
+balanceado(a(_, HI, HD)) :-
+	altura(HI, AI),
+	altura(HD, AD),
+	R is AI - AD,
+	X is abs(R),
+	1 is max(1,R).
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
