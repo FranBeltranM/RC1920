@@ -85,7 +85,7 @@ Esta representación tiene tres tipos de relaciones:
 -	También son inadecuadas ya que no tienen un cuantificador equivalente.
 -	Las redes no son inteligentes y dependen del creador.
 
-#### Marco (Frame)
+## Marco (Frame)
 Un marco (frame, en inglés) es una estructura de datos que contiene una colección de atributos y valores que describe una entidad del mundo real. Tienen mucha similitud con las estructuras de los lenguajes de POO pero en el ámbito de la IA.
 
 Su fundamento se basa en la idea básica de que la conducta humana se caracteriza por tomar hábitos y proceder en consecuencia en situaciones familiares para generar conocimiento a partir de deducciones.
