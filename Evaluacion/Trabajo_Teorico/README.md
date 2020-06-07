@@ -57,6 +57,8 @@ Lógica: ∀X.(coche(X)→∃Y.(tiene(X,Y)∧ ruedas(Y)))
 -	Tiene algunas restricciones y es complicado trabajar con ellas.
 -	Puede no ser muy natural y la deducción podría no ser muy eficiente.
 
+Un programa que nos permitiría trabajar con programación lógica sería **Anallogica**, aunque si web oficial no está disponible, hay multitud de sitios para poder descargarlo.
+
 ## Redes semánticas
 Son una alternativa a los predicados lógicos. En las redes semánticas puedes representar el conocimiento en forma de grafos.
 
@@ -84,6 +86,8 @@ Esta representación tiene tres tipos de relaciones:
 -	Toman más tiempo computacional en tiempo de ejecución.
 -	También son inadecuadas ya que no tienen un cuantificador equivalente.
 -	Las redes no son inteligentes y dependen del creador.
+
+Para las redes semánticas, un programa que nos permitiría trabajar con ellas es **SemnNet**
 
 ## Marco (Frame)
 Un marco (frame, en inglés) es una estructura de datos que contiene una colección de atributos y valores que describe una entidad del mundo real. Tienen mucha similitud con las estructuras de los lenguajes de POO pero en el ámbito de la IA.
@@ -134,6 +138,8 @@ El sistema de reglas está formado por tres partes:
 #### Desventajas
 -	No muestra ninguna capacidad de aprendizaje y no almacena el resultado para futuras aplicaciones.
 -	Durante la ejecución del programa, pueden ejecutarse demasiadas reglas en un momento determinad. Esto resulta muy ineficiente.
+
+Para las reglas, un programa que usamos en nuestro 2º curso de la carrera fue el conocido **CLIPS**, con el podríamos trabajar programando con reglas.
 
 ## Bibliografía
 
